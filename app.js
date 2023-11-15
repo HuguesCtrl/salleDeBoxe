@@ -6,10 +6,8 @@ const modale = document.querySelector(".bloc-modale");
 const closeModale = document.querySelector(".close-modale");
 //Récupère toutes les "images boutons"
 const imgIndex = document.querySelector(".bloc-modale img");
-//Responsive de la fenêtre
-const media1 = window.matchMedia("(min-width:850px)");
 
-if (media1.matches) {
+if (window.matchMedia("(min-width: 850px)").matches) {
   allBtn.forEach((btn) =>
     btn.addEventListener("click", (e) => {
       imgIndex.src = `./ressources/img${e.target.getAttribute(

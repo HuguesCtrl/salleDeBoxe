@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salle de Boxe</title>
-    <link rel="stylesheet" href="./style.css">
     <script src="./app.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
@@ -14,10 +14,10 @@
     <!-- Navigation -->
     <nav>
         <ul>
-            <li><a href="#" class="item-navigation">Accueil</a></li>
-            <li><a href="#" class="item-navigation">Matériel</a></li>
-            <li><a href="#" class="item-navigation">Tarifs</a></li>
-            <li><a href="#" class="item-navigation">Contact</a></li>
+            <li><a href="#home" class="item-navigation">Accueil</a></li>
+            <li><a href="#equipement" class="item-navigation">Matériel</a></li>
+            <li><a href="#tarifs" class="item-navigation">Tarifs</a></li>
+            <li><a href="#contact" class="item-navigation">Contact</a></li>
         </ul>
     </nav>
 
@@ -81,17 +81,19 @@
     </section>
 
     <!-- Section équipements -->
-    <h2 class="titre-equipements">Les équipements</h2>
     <section id="equipement">
-        <button type="button" data-index="1" class="btn-modale"></button>
-        <button type="button" data-index="2" class="btn-modale"></button>
-        <button type="button" data-index="3" class="btn-modale"></button>
-        <button type="button" data-index="4" class="btn-modale"></button>
-        <button type="button" data-index="5" class="btn-modale"></button>
-        <button type="button" data-index="6" class="btn-modale"></button>
-        <button type="button" data-index="7" class="btn-modale"></button>
-        <button type="button" data-index="8" class="btn-modale"></button>
-        <button type="button" data-index="9" class="btn-modale"></button>
+        <h2 class="titre-equipements">Les équipements</h2>
+        <div class="equipments-container">
+            <button type="button" data-index="1" class="btn-modale"></button>
+            <button type="button" data-index="2" class="btn-modale"></button>
+            <button type="button" data-index="3" class="btn-modale"></button>
+            <button type="button" data-index="4" class="btn-modale"></button>
+            <button type="button" data-index="5" class="btn-modale"></button>
+            <button type="button" data-index="6" class="btn-modale"></button>
+            <button type="button" data-index="7" class="btn-modale"></button>
+            <button type="button" data-index="8" class="btn-modale"></button>
+            <button type="button" data-index="9" class="btn-modale"></button>
+        </div>
     </section>
 
     <div class="bloc-modale">
@@ -107,7 +109,7 @@
     </section>
 
     <!-- Section Tarifs -->
-    <section class="tarifs">
+    <section class="tarifs" id="tarifs">
         <h2 class="titre-tarifs">Tarifs</h2>
         <div class="container-cartes-tarifs">
             <!-- carte 1 -->
@@ -188,11 +190,25 @@
             </div>
         </div>
     </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+
+    <!-- Section contact -->
+    <h2 class="titre-contact">Contact</h2>
+    <section id="contact">
+        <form>
+            <label for="prenom">PRENOM</label>
+            <input type="text" id="prenom">
+            <label for="nom">NOM</label>
+            <input type="text" id="nom">
+            <label for="txt-area">MESSAGE</label>
+            <textarea id="txt-area"></textarea>
+            <button class="form-btn" type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Tous droits réservés &copy;</p>
+    </footer>
 </body>
 
 </html>
