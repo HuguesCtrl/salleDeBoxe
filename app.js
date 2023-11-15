@@ -2,11 +2,10 @@
 const allBtn = document.querySelectorAll(".btn-modale");
 //Selectionne la modale
 const modale = document.querySelector(".bloc-modale");
-//Selectionne le bouton de fermeture de la modale
-const closeModale = document.querySelector(".close-modale");
 //Récupère toutes les "images boutons"
 const imgIndex = document.querySelector(".bloc-modale img");
 
+//Ouverture modale si l'écran est supérieur à 850px de large
 if (window.matchMedia("(min-width: 850px)").matches) {
   allBtn.forEach((btn) =>
     btn.addEventListener("click", (e) => {
@@ -16,7 +15,6 @@ if (window.matchMedia("(min-width: 850px)").matches) {
       modale.classList.add("active-modale");
     })
   );
-
   modale.addEventListener("click", () => {
     modale.classList.remove("active-modale");
   });
