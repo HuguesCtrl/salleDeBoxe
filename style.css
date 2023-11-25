@@ -62,6 +62,13 @@ nav a {
     }
 }
 
+@media screen and (max-width: 350px) {
+
+    nav a {
+        font-size: 14px;
+    }
+}
+
 /* Accueil Fondu -----------------------------------*/
 .accueil {
     height: 800px;
